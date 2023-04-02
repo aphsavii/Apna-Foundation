@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Apna-Foundation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="/images/logo.png" class="navbar-brand">
+                <span class="ltext">Apna Foundation</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Home</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item"><a class="nav-link" href="#">Mission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Where to help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">How to help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Charity</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">petitions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner Area  -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner d-flex">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/slider.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="contain">
+                <div class="btext">
+                    <h3>Helping animals.
+                        <br> Saving lives.
+                    </h3>
+                    <br>
+                    <p>Let us end all types of cruelty to animals together. Feed them, don't hit them. Shoot them with
+                        cameras, not with guns. Never pester animals for fun.<br>We love pets and we believe pets make
+                        us better people.</p>
+                    <br>
+                    <button type="button" class="transb" style="margin-left: 40px;"><a href="#">Read more</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HELP  -->
+    <section id="help" class="container__center">
+        <h1>Find out how to help the animals</h1>
+        <div class="help__cards--container center__row">
+            <div class="help__card container__center">
+                <span class="card__title">Adopting</span>
+                <h3>Give the animal you love a home</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quam ex neque.</p>
+                <div class="card__link container__center">
+                    <a href="#">Adopt Now</a>
+                </div>
+            </div>
+            <div class="help__card container__center">
+                <span class="card__title">Volunteering</span>
+                <h3>Be part of the team helping the animals</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quam ex neque.</p>
+                <div class="card__link container__center">
+                    <a href="#">Join Now</a>
+                </div>
+            </div>
+            <div class="help__card container__center">
+                <span class="card__title">Charity</span>
+                <h3>Help the Pets Care Foundation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quam ex neque.</p>
+                <div class="card__link container__center">
+                    <a href="#">Help Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image gallary -->
+    <h1 style="width: 100%;text-align: center;">Image Gallery</h1>
+    <section id="gallery">
+        <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="img__gallery" id="img-1">
+        <img src="https://www.thesprucepets.com/thmb/SQspUyB0fpa6FaB9OeAOxyoBo8w=/4090x2721/filters:fill(auto,1)/cat-playing-with-toys-628829142-5911ee5c5f9b58647098d81c.jpg"
+            class="img__gallery" id="img-2">
+        <img src="https://media.npr.org/assets/img/2020/03/27/dogs-coronavirus-7ddabfde75121f5020c307e134cb60dfa746fe1c-s800-c85.jpg"
+            class="img__gallery" id="img-3">
+        <img src="https://images.squarespace-cdn.com/content/v1/5246fb63e4b0240948a40520/1440452356949-6A285K6C39FE7F8Y2C37/ke17ZwdGBToddI8pDm48kBtpJ0h6oTA_T7DonTC8zFdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIWkiAYz5ghgEgSGJuDQ4e1ZKXpRdhEMT7SgthRpD0vyIKMshLAGzx4R3EDFOm1kBS/image-asset.jpeg"
+            class="img__gallery" id="img-4">
+        <img src="https://i0.wp.com/www.techdigest.tv/wp-content/uploads/2014/11/spotify-cat-people.jpg?ssl=1"
+            class="img__gallery" id="img-5">
+        <img src="https://i1.wp.com/movingtips.wpengine.com/wp-content/uploads/2019/08/birds-transporting.jpg?fit=1024%2C684&ssl=1"
+            class="img__gallery" id="img-6">
+        <img src="https://i.pinimg.com/originals/01/f3/11/01f31165f552ca9b5ac6857f6c59fa09.jpg" class="img__gallery"
+            id="img-7">
+        <img src="https://www.bluecross.org.uk/sites/default/files/d8/assets/images/108048.jpg" class="img__gallery"
+            id="img-8">
+        <img src="https://www.petsourcing.com/wp-content/uploads/2018/12/waht-is-the-most-popular-pets-in-Japan-696x602.jpg"
+            class="img__gallery" id="img-9">
+    </section>
+
+    <!-- Contact -->
+    <h1 style="width: 100%;text-align: center;">Contact Us</h1>
+    <form>
+        <div class="form__row">
+            <input type="text" id="name">
+            <label for="name">First Name</label>
+        </div>
+        <div class="form__row">
+            <input type="text" id="last-Name">
+            <label for="last-Name">Last Name</label>
+        </div>
+        <div class="form__row">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+        </div>
+        <div class="form__row">
+            <input type="number" id="phone">
+            <label for="phone">Phone</label>
+        </div>
+        <div class="form__row">
+            <textarea id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer__cont center__row">
+            <p>2023 &copyApnaFoundation | All rights reserved</p>
+            <div>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
