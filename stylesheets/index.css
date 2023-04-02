@@ -307,7 +307,7 @@
 
 /* CONTACT FORM */
 form {
-  width: 60vw;
+  width: 75vw;
   max-width: 800px;
   margin: 2rem auto;
   display: grid;
@@ -368,13 +368,13 @@ textarea::placeholder {
 
 form button {
   background-color: var(--dark-blue);
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 10px;
   border: none;
   outline: none;
   color: var(--light-blue);
   cursor: pointer;
-  width: 60%;
+  width: 80%;
   margin: 5px;
 }
 
@@ -389,7 +389,7 @@ footer {
 }
 
 .footer__cont {
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 
