@@ -153,6 +153,161 @@ device specific styles
         width: 400px;
     }
 }
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    background-image: url(../images/bg.jpg);
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* root  */
+:root {
+    --red: #F26419;
+    --orange: #F6AE2D;
+    --dark-blue: #33658A;
+    --light-blue: #86BBD8;
+    --dark: #2F4858;
+}
+
+/*
+Container div
+*/
+
+div.container {
+    margin: 4em auto 2em auto;
+    padding: 1em;
+    overflow: hidden;
+    border: 1px solid var(--light-blue);
+    border-radius: 20px;
+    box-shadow: 0 0 2px 2px var(--light-blue);
+}
+
+
+/*
+
+Styles for form filelds
+
+*/
+
+div.container label,
+div.container input,
+div.container button {
+    display: block;
+    width: 80%;
+    font-size: 1em;
+    /* color: var(--light-blue); */
+}
+
+div.container label {
+    margin: 0.5em auto 0.5em auto;
+    color: var(--light-blue);
+}
+
+div.container input {
+    padding: 0.8em 0 0.8em 0.8em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--light-blue);
+    margin: 0.5em auto 0.5em auto;
+    color: #000;
+}
+
+div.container button {
+    outline: none;
+    margin: 2em auto 1em auto;
+    padding: 1.2em;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 2px 2px var(--light-blue);
+    background:none;
+    color: var(--light-blue);
+    border: none;
+    border-radius: 5px;
+}
+div.container button:hover{
+    background-color: var(--red);
+    color: white;
+}
+
+
+/*
+
+tab styles
+
+*/
+
+.tab {
+    margin: 0 auto 0 auto;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tablinks {
+    color: #fff;
+    padding: 1em 0 1em 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: 1.5px solid var(--light-blue);
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    margin: 0px 2px;
+}
+
+.active {
+    animation-name: activetab;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    background-color: var(--red);
+    color: #fff;
+    border: 1.5px solid var(--red);
+
+}
+
+@keyframes activetab {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.tabcontent {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: none;
+    padding: 2em 0 2em 0;
+    overflow: hidden;
+}
+
+
+/*
+
+device specific styles
+
+*/
+
+@media only screen and (min-width: 1224px) {
+    div.container {
+        overflow: hidden;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1824px) {
+    div.container {
+        width: 400px;
+    }
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     div.container {
