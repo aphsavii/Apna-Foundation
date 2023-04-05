@@ -526,7 +526,7 @@ font-size: 13px;
     height: 150px;
   }
 
-  .address a{
+  .address li{
     font-size: 12px;
   }
 }
