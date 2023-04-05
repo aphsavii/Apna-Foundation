@@ -526,7 +526,7 @@ font-size: 13px;
     height: 150px;
   }
 
-  /* .footer__cont {
-    height: 70px;
-  } */
+  .address a{
+    font-size: 12px;
+  }
 }
