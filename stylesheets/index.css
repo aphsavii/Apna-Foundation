@@ -417,12 +417,14 @@ footer {
   /* text-decoration: none; */
   list-style: none;
   color: var(--dark-blue);
+  font-size: 14px;
 }
 footer #mail{
-font-size: 14px;
+font-size: 13px;
 }
 .map{
   margin-top:5px;
+  margin-right: 2px;
 }
 .lower_foot{
   display: flex;
@@ -512,7 +514,7 @@ font-size: 14px;
   .footer__cont {
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 100%;
   }
 
   footer p {
