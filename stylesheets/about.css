@@ -1,0 +1,136 @@
+/* root  */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --red: #F26419;
+    --orange: #F6AE2D;
+    --dark-blue: #33658A;
+    --light-blue: #86BBD8;
+    --dark: #2F4858;
+}
+
+/* align container */
+.container__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.align__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navbar {
+    background-color: var(--dark-blue);
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-header {
+    height: 100%;
+}
+
+.navbar-brand {
+    height: 69px;
+    padding-right: 7px;
+    padding-left: 0px;
+    margin-right: 0px;
+}
+
+.nav-item a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-blue);
+}
+
+.navbar ul li {
+    border-radius: 20px;
+    padding: 0px 15px;
+    margin: 15px 10px;
+    transition: 0.5s;
+}
+
+.nav-item :hover {
+    color: var(--orange);
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.ltext {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* section */
+
+.container_inst {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px 0px;
+    /* margin-right: 0px; */
+}
+
+.container_inst iframe {
+    width: 80%;
+    /* width: 50%; */
+}
+
+
+/* Media  Queries */
+
+@media only screen and (max-width: 992px) {
+
+    .offcanvas-body,
+    .offcanvas-header {
+        background: url(../images/bg.jpg);
+        color: var(--light-blue);
+    }
+
+    .carousel-item img {
+        object-fit: fill;
+    }
+
+    .btext {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .contain {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btext p {
+        font-size: 15px;
+    }
+}
+
+.btext h3 {
+    font-size: 26px;
+}
