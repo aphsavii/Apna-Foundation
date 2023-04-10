@@ -11,6 +11,7 @@
   --dark-blue: #33658A;
   --light-blue: #86BBD8;
   --dark: #2F4858;
+  --bg-blue: #3871c8;
 }
 
 /* align container */
@@ -481,7 +482,7 @@ footer #mail {
 
   .offcanvas-body,
   .offcanvas-header {
-    background: url(../images/bg.jpg);
+    background: var(--bg-blue);
     color: var(--light-blue);
   }
 
@@ -553,23 +554,28 @@ footer #mail {
   margin: 5px;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: var(--dark-blue);
   color: var(--light-blue);
   border: none;
 }
-.modal-content{
-  background: url(../images/bg.jpg);
+
+.modal-content {
+  background: var(--bg-blue);
 }
-.modal-footer{
-  border-top:none;
+
+.modal-footer {
+  border-top: none;
 }
-.modal-header{
-  border-bottom:none;
+
+.modal-header {
+  border-bottom: none;
 }
-.donate h2{
+
+.donate h2 {
   color: var(--orange);
 }
-.donate p{
+
+.donate p {
   color: var(--light-blue);
 }
