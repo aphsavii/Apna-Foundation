@@ -308,7 +308,7 @@
 
 
 /* CONTACT FORM */
-form {
+#contactForm {
   width: 75vw;
   max-width: 800px;
   margin: 2rem auto;
@@ -317,7 +317,7 @@ form {
   grid-gap: 10px;
 }
 
-form .form__row {
+#contactForm .form__row {
   width: 100%;
   position: relative;
 }
@@ -374,7 +374,7 @@ textarea::placeholder {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-form button {
+#contactForm button {
   background-color: var(--dark-blue);
   font-size: 15px;
   border-radius: 10px;
@@ -547,7 +547,7 @@ footer #mail {
   }
 }
 
-/* Donate footer */
+/* Donation Modal */
 .daonate button {
   background-color: var(--dark-blue);
   font-size: 15px;
@@ -584,4 +584,28 @@ footer #mail {
 
 .donate p {
   color: var(--light-blue);
+}
+
+/* Adoption Modal */
+
+
+#adoptionModal form h5 {
+  width: 100%;
+  text-align: center;
+}
+
+#adoptionModal h5 {
+  color: var(--orange);
+}
+
+#adoptionModal label {
+  color: var(--dark-blue);
+}
+
+.form-check-label {
+  font-size: 13px !important;
+}
+
+label span {
+  color: var(--red);
 }
