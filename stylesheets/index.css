@@ -73,9 +73,10 @@
   color: #fff;
 }
 
-.offcanvas{
+.offcanvas {
   max-width: 60%;
 }
+
 .ltext {
   color: #fff;
   font-size: 1.2rem;
@@ -351,6 +352,12 @@ input:focus~label {
   color: var(--dark-blue);
 }
 
+input:not(:placeholder-shown)~label {
+  top: -5px;
+  font-size: 10px;
+  color: var(--dark-blue);
+}
+
 textarea {
   width: 100%;
   height: 30px;
@@ -559,7 +566,7 @@ footer #mail {
   border: none;
 }
 
-.modal-content{
+#donate .modal-content {
   background: var(--bg-blue);
 }
 
