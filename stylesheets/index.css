@@ -606,6 +606,33 @@ footer #mail {
   font-size: 13px !important;
 }
 
-label span {
+#adoptionModal label span {
   color: var(--red);
+}
+
+#adoptionModal textarea {
+  height: 100px;
+}
+
+/* Our mission */
+#ourMission .modal-content {
+  background-color: var(--bg-blue);
+}
+
+#ourMission h2 {
+  color: var(--orange);
+  width: 100%;
+  text-align: center;
+}
+
+.mission {
+  margin-bottom: 1rem;
+}
+
+#ourMission h5 {
+  color: var(--dark);
+}
+
+#ourMission p {
+  color: var(--light-blue);
 }

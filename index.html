@@ -46,6 +46,54 @@
     </div>
     </div>
 
+    <!-- Our Mission Modal -->
+    <div class="modal" tabindex="-1" id="ourMission">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="mb-3">Our mission</h2>
+                    <div class="mission">
+                        <h5>Conservation and Habitat Restoration</h5>
+                        <p>Our NGO's mission is to actively participate in the conservation of wildlife and their
+                            natural habitats...</p>
+                    </div>
+                    <div class="mission">
+                        <h5>Wildlife Rescue and Rehabilitation</h5>
+                        <p>Our NGO is committed to rescuing and rehabilitating injured, orphaned, and displaced
+                            wildlife...</p>
+                    </div>
+                    <div class="mission">
+                        <h5>Anti-Poaching and Wildlife Crime Prevention</h5>
+                        <p>Our NGO works towards combating wildlife poaching and illegal trade in endangered species...
+                        </p>
+                    </div>
+                    <div class="mission">
+                        <h5>Community Engagement and Education</h5>
+                        <p>Our NGO believes that community engagement and education are crucial for wildlife
+                            conservation...</p>
+                    </div>
+                    <div class="mission">
+                        <h3>Research and Monitoring</h3>
+                        <p>Our NGO is committed to conducting scientific research and monitoring programs to better
+                            understand wildlife populations...</p>
+                    </div>
+                    <div class="mission">
+                        <h3>Advocacy and Policy Change</h3>
+                        <p>Our NGO strives to advocate for policy changes at local, national, and international levels
+                            to improve wildlife conservation...</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Adoption Modal -->
     <div class="modal" tabindex="-1" id="adoptionModal">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -82,7 +130,8 @@
                         <!-- Address -->
                         <h5 class="mb-3 mt-4">Address</h5>
                         <div class="mb-2">
-                            <label for="street" class="form-label form-label-sm">Street Adress <span> *</span></label>
+                            <label for="street" class="form-label form-label-sm">Street Adress <span>
+                                    *</span></label>
                             <input type="text" class="form-control form-control-sm" id="street"
                                 aria-describedby="emailHelp" name="street" required>
                         </div>
@@ -135,19 +184,65 @@
                                     Female
                                 </label>
                             </div>
-
                         </div>
 
-                        <div class="mb-2 form-check">
+                        <!-- Living Situation -->
+                        <h5 class="mb-3 mt-4">Living Situation</h5>
+
+                        <div class="mb-2">
+                            <label class="form-label form-label-sm">Type of Home <span> *</span></label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="houseType" id="house" value="house">
+                                <label class="form-check-label" for="house">
+                                    House
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="houseType" id="apartment"
+                                    value="apartment">
+                                <label class="form-check-label" for="apartment">
+                                    Apartment
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label form-label-sm">Do you have other pets at home? <span>
+                                    *</span></label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="otherPets" value="YES">
+                                <label class="form-check-label" for="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="otherPets" value="NO">
+                                <label class="form-check-label" for="female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <h5 class="mb-3 mt4">Additional Questions</h5>
+
+                        <div class="mb-2">
+                            <label for="whyAdopt">Why do you want to adopt this animal?</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="whyAdopt"
+                                name="whyAdopt"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label for="howTakeCare">How will you take care of the animal?</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="howTakeCare"
+                                name="howTakeCare"></textarea>
+                        </div>
+                        <!-- <div class="mb-2 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">I accept the Terms &
-                                Conditions</a></label>
-                        </div>
+                            <label class="form-check-label" for="exampleCheck1">I accept the Terms & Conditions</a></label>
+                        </div> -->
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" form="donationForm" class="btn btn-primary">Submit</button>
+                    <button type="submit" form="adoptionForm" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
@@ -171,7 +266,8 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" href="#">Mission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ourMission" data-bs-toggle="modal"
+                                data-bs-target="#ourMission">Mission</a></li>
                         <li class="nav-item"><a class="nav-link" href="#maps">Where to help</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">How to help</a></li>
                         <li class="nav-item"><a class="nav-link" href="#donate" data-bs-toggle="modal"
@@ -196,11 +292,14 @@
                         <br> Saving lives.
                     </h3>
                     <br>
-                    <p>Let us end all types of cruelty to animals together. Feed them, don't hit them. Shoot them with
-                        cameras, not with guns. Never pester animals for fun.<br>We love pets and we believe pets make
+                    <p>Let us end all types of cruelty to animals together. Feed them, don't hit them. Shoot them
+                        with
+                        cameras, not with guns. Never pester animals for fun.<br>We love pets and we believe pets
+                        make
                         us better people.</p>
                     <br>
-                    <button type="button" class="transb" style="margin-left: 40px;"><a href="#">Read more</a></button>
+                    <button type="button" class="transb" style="margin-left: 40px;"><a href="#">Read
+                            more</a></button>
                 </div>
             </div>
         </div>
@@ -222,7 +321,8 @@
             <div class="help__card container__center">
                 <span class="card__title">Volunteering</span>
                 <h3>Be part of the team helping the animals</h3>
-                <p>Give your time, lend a hand. Volunteer for animal causes, take a stand. Help care for the helpless,
+                <p>Give your time, lend a hand. Volunteer for animal causes, take a stand. Help care for the
+                    helpless,
                     make their lives bright. Your efforts can bring joy, from morning till night.</p>
                 <div class="card__link container__center">
                     <a href="#">Join Now</a>
